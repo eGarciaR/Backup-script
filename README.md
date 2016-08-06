@@ -1,4 +1,4 @@
-BACKUP SCRIPT
+#BACKUP SCRIPT
 
 This is a backup script for linux systems. Currently is working for 
 Archlinux using KDE as a desktop environment.
@@ -28,8 +28,7 @@ computer to do the backup weekly. So first of all, we must change our /etc/fstab
 configuration file. With this setup we'll be able to mount the device into 
 our backup folder everytime the system starts:
 
-/etc/fstab
-#Add this line:
+Add this line to /etc/fstab
 /dev/sdd3	/backup	      ext4       ro,noatime       0      2
 
 ro option is used to mount the device in read only mode. This is crucial to 
