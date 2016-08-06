@@ -29,7 +29,8 @@ configuration file. With this setup we'll be able to mount the device into
 our backup folder everytime the system starts:
 
 Add this line to /etc/fstab
-/dev/sdd3	/backup	      ext4       ro,noatime       0      2
+
+> /dev/sdd3	/backup	      ext4       ro,noatime       0      2
 
 ro option is used to mount the device in read only mode. This is crucial to 
 avoid unwanted modifications in our backup folder. If for some reason we 
