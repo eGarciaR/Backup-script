@@ -15,7 +15,7 @@ else
 	#First we want to set the mount point to read-write option
 	mount -o remount,rw /dev/sdd3 /backup
 
-	#As we don't want to backup trash files, we empty the Trash usign trash-cli
+	#As we don't want to backup trash files, we empty the Trash using trash-cli
 	trash-empty
 
 	#If the backup folder is empty we want a Full backup
