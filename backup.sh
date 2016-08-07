@@ -15,8 +15,8 @@ else
 	#First we want to set the mount point to read-write option
 	mount -o remount,rw /dev/sdd3 /backup
 
-	#As we don't want to backup trash files, we empty the Trash (KDE command)
-	ktrash --empty
+	#As we don't want to backup trash files, we empty the Trash usign trash-cli
+	trash-empty
 
 	#If the backup folder is empty we want a Full backup
 	if [ "$latestModifiedFile" == "" ]; then 
@@ -38,3 +38,4 @@ fi
 mount -o remount,ro /dev/sdd3 /backup
 
 echo $log_message > /home/eric/backup_log.txt
+echo $log_message done!
