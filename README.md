@@ -5,6 +5,9 @@ Archlinux using KDE as a desktop environment.
 
 TIPS:
 
+In order to make the trash-empty line work, you must install trasch-cli, 
+otherwise comment that line. 
+
 To make a correct backup you should create a backup folder in your system, 
 let's say, for example, in /backup: 
 
